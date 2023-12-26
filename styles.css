@@ -1,0 +1,234 @@
+/* /* /* body { */
+    /* font-family: Arial, sans-serif; */
+    /* margin: 0; */
+    /* padding: 0; */
+/* } */
+... Your existing styles ...
+
+/* .main-content { */
+    /* width: 65%; */
+    /* padding: 20px; */
+    /* border: 2px solid #333; /* Add border style and color as needed */ */
+    /* border-radius: 10px; /* Optional: Add border-radius for rounded corners */ */
+/* } */
+
+... Your existing styles ...
+
+/* .container { */
+    /* display: flex; */
+/* } */
+
+/* .sidebar { */
+    /* width: 30%; */
+    /* background-color: #333; */
+    /* color: #fff; */
+    /* padding: 10px; */
+/* } */
+
+/* .main-content { */
+    /* width: 65%; */
+    /* padding: 20px; */
+/* } */
+/* .sidebar1 { */
+    /* width: 70%; */
+    /* background-color: #333; */
+    /* color: #fff; */
+    /* padding: 10px; */
+/* } */
+/* footer { */
+    /* background-color: #333; */
+    /* color: #fff; */
+    /* text-align: center; */
+    /* padding: 10px; */
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* width: 100%; */
+/* } */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ... Your existing styles ... */
+
+.main-content {
+    width: 65%;
+    padding: 20px;
+    border: 2px solid #333; /* Add border style and color as needed */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.main-content {
+    width: 65%;
+    padding: 20px;
+}
+
+.sidebar1 {
+    width: 70%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ... Your existing styles ... */
+#navigation_inner {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#navigation_innermost {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#navigation_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#mainNav1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mainNav1 li {
+    margin-bottom: 5px;
+}
+
+#mainNav1 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: clamp(14px, 3vw, 18px); /* Adjust the min, viewport width, and max values as needed */
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: block;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+#mainNav1 a:hover {
+    background-color: #777;
+}
+
+.current a {
+    background-color: #777;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content,
+	.sidebar1 {
+        width: 100%;
+    }
+	 .main-content {
+        border: none; /* Remove border for smaller screens if needed */
+ 
+}
+
+@media only screen and (max-width: 440px) {
+    #mainNav1 a {
+        font-size: clamp(12px, 2vw, 16px); /* Adjust the min, viewport width, and max values as needed */
+        padding: 8px;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    /* New styles for buttons with badge using clamp */
+    .button-with-badge {
+        width: clamp(220px, 100%, 100%); /* Adjust the min, preferred, and max values as needed */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .badge {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+	  .main-content {
+        border: none; /* Remove border for smaller screens if needed */
+
+}
+/* Your existing styles above this line */
+
+#mainNav2 {
+    /* Add styles for the level_2 links */
+}
+
+#mainNav2 li {
+    /* Add styles for the level_2 links */
+}
+
+#mainNav2 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: clamp(14px, 3vw, 18px); /* Adjust the min, viewport width, and max values as needed */
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: block;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+#mainNav2 a:hover {
+    background-color: #777;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Your existing responsive styles */
+
+    #mainNav2 a {
+        font-size: clamp(12px, 2vw, 16px); /* Adjust the min, viewport width, and max values as needed */
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    /* Your existing styles for smaller screens */
+
+    #mainNav2 a {
+        font-size: clamp(12px, 2vw, 16px); /* Adjust the min, viewport width, and max values as needed */
+        padding: 8px;
+    }
+}
+
+ */
